@@ -23,8 +23,8 @@ CREATE TABLE [dbo].[Orders](
 GO
 
 
-INSERT [dbo].[Orders] ([OrderNo], [DeliveryDate], [DeliveryName], [DeliveryAddress]) VALUES (N'201616170001', CAST(N'2016-12-30' AS Date), N'JASPER', N'TAIPEI');
-INSERT [dbo].[Orders] ([OrderNo], [DeliveryDate], [DeliveryName], [DeliveryAddress]) VALUES (N'201616170002', CAST(N'2016-12-30' AS Date), N'JUDY', N'TAINAN');
+INSERT [dbo].[Orders] ([OrderNo], [DeliveryDate], [DeliveryName], [DeliveryAddress]) VALUES (N'201612170001', CAST(N'2016-12-30' AS Date), N'JASPER', N'TAIPEI');
+INSERT [dbo].[Orders] ([OrderNo], [DeliveryDate], [DeliveryName], [DeliveryAddress]) VALUES (N'201612170002', CAST(N'2016-12-30' AS Date), N'JUDY', N'TAINAN');
 GO
 
 -- 訂單明細檔
@@ -39,11 +39,11 @@ CREATE TABLE [dbo].[OrderDetails](
 )
 GO
 
-INSERT [dbo].[OrderDetails] ([OrderNo], [Line], [ProductName], [Qty], [Amt]) VALUES (N'201616170001', 1, N'ASP.NET MVC 5 網站開發美學', 1, CAST(624 AS Decimal(8, 0)));
-INSERT [dbo].[OrderDetails] ([OrderNo], [Line], [ProductName], [Qty], [Amt]) VALUES (N'201616170001', 2, N'ASP.NET MVC 5 實務專題範例教學', 1, CAST(502 AS Decimal(8, 0)));
-INSERT [dbo].[OrderDetails] ([OrderNo], [Line], [ProductName], [Qty], [Amt]) VALUES (N'201616170001', 3, N'ASP.NET MVC 5 完全攻略', 1, CAST(552 AS Decimal(8, 0)));
-INSERT [dbo].[OrderDetails] ([OrderNo], [Line], [ProductName], [Qty], [Amt]) VALUES (N'201616170002', 1, N'王者歸來 : jQuery開發權威指南, 2/e', 1, CAST(612 AS Decimal(8, 0)));
-INSERT [dbo].[OrderDetails] ([OrderNo], [Line], [ProductName], [Qty], [Amt]) VALUES (N'201616170002', 2, N'思考的原點：大前研一的麥肯錫思考術', 1, CAST(257 AS Decimal(8, 0)));
+INSERT [dbo].[OrderDetails] ([OrderNo], [Line], [ProductName], [Qty], [Amt]) VALUES (N'201612170001', 1, N'ASP.NET MVC 5 網站開發美學', 1, CAST(624 AS Decimal(8, 0)));
+INSERT [dbo].[OrderDetails] ([OrderNo], [Line], [ProductName], [Qty], [Amt]) VALUES (N'201612170001', 2, N'ASP.NET MVC 5 實務專題範例教學', 1, CAST(502 AS Decimal(8, 0)));
+INSERT [dbo].[OrderDetails] ([OrderNo], [Line], [ProductName], [Qty], [Amt]) VALUES (N'201612170001', 3, N'ASP.NET MVC 5 完全攻略', 1, CAST(552 AS Decimal(8, 0)));
+INSERT [dbo].[OrderDetails] ([OrderNo], [Line], [ProductName], [Qty], [Amt]) VALUES (N'201612170002', 1, N'王者歸來 : jQuery開發權威指南, 2/e', 1, CAST(612 AS Decimal(8, 0)));
+INSERT [dbo].[OrderDetails] ([OrderNo], [Line], [ProductName], [Qty], [Amt]) VALUES (N'201612170002', 2, N'思考的原點：大前研一的麥肯錫思考術', 1, CAST(257 AS Decimal(8, 0)));
 GO
 
 
